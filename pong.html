@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+            #comPaddle {
+                fill: white;
+            }
+            
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong by Jeyvan Viriya</h1>
+        <svg id="canvas" width="800" height="600">
+            <rect id = "Arena" x="0" y="0" width = "800" height = "600"></rect> 
+            <rect id = "comArea" x="0" y="0" width = "399" height = "600"></rect>
+            <rect id = "userArea" x="401" y="0" width = "399" height = "600"></rect>
+            <rect  id ="userPaddle" x="780" y="20" width = "7.5" height = "50" style="fill:white"></rect>
+            <rect id ="comPaddle" x="20" y="20"width = "7.5" height = "50"></rect>
+            <line id = "line1" x1 = "399" x2="401" y1="10" y2="590" stroke="white" stroke-width="3" stroke-dasharray="10"></line>
+            <text id="userHeader" x="560" y="135" font-family="comic-sans" font-size="24px" fill="white">Player 1</text>
+            <text id="userHeader" x="170" y="135" font-family="comic-sans" font-size="24px" fill="white">COM</text>
+
+        </svg>
+    </body>  
+</html>
